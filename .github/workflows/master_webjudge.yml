@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'WebJudge'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0B61FA82201B4918A3327AB3130B6F97 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1572AAD0089D442D839D9EA373BA34E9 }}
