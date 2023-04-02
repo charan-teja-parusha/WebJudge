@@ -1,0 +1,69 @@
+<div>
+
+  <div class="row mt-5">  
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header" style="text-align: center; padding: 10px;">
+          {{mymember.0.brandname}} Ratings
+        </div>
+        <div id="chart_div" class="chart-box" style="width: 100px; height: 150px; margin: 0 auto; text-align: center; display: flex; align-items: center; justify-content: center;">
+          <h1 class="display-4" style="font-size:6em;">{{ratings}}/5</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-5">
+    <div class="col-lg-12">
+        <p>Apple Inc. (Apple) designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories and sells a range of related services. The Company's products include iPhone, Mac, iPad, AirPods, Apple TV, Apple Watch, Beats products, HomePod, iPod touch and accessories.</p>
+    </div>
+</div>
+
+<div class="row mt-5 mb-3">
+    <div class="col-lg-12">
+      <h2 class="text-center">User Reviews</h2>
+    </div>
+  </div>    
+
+  <div class="row mt-5">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header" style="background-color: green; color: white;">Positive reviews</div>
+            <div class="card-body">
+                <ul class="list-group">
+                    {% for review in topreviews %}
+                    <li class="list-group-item">{{review.reviews}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header" style="background-color: orangered; color: white;">Negative reviews</div>
+            <div class="card-body">
+                <ul class="list-group">
+                    {% for breview in bottomreviews %}
+                    <li class="list-group-item">{{breview.reviews}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-12">
+      <form method="get" action="{% url 'main' %}">
+        {% csrf_token %}
+        <input type="hidden" value="{{mymember.0.brandname}}" name="search_query"></input>
+        <button type="submit" class="btn btn-primary btn-lg" style="height: 43px;">Add Review</button>
+    </form>
+    </div>
+  </div>
+</div>
+
+</div>
+

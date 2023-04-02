@@ -1,0 +1,36 @@
+{% extends "base/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-append">
+                        <form method="get" action="{% url 'main' %}">
+                            <input type="text" class="form-control form-control-lg ml-5 w-100" placeholder="Brand name .." style="width: 500px;" name="search_query">
+                            <button type="submit" class="btn btn-primary btn-lg" style="height: 48px;">Search</button>
+                        </form>
+                        </div>
+                    No results found
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block extra_css %}
+{{ form.media.css }}
+{% endblock %}
+
+{% block extra_js %}
+{{ form.media.js }}
+{% endblock %}

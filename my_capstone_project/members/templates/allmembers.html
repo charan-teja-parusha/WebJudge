@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+  My Club - List of all members
+{% endblock %}
+
+
+{% block content %}
+  <h1><a href='/'>Home</a></h1>
+  <h1>Members</h1>
+  
+  <ul>
+
+    {% for x in mymembers %}
+      <li {% if forloop.first %}
+        style='background-color:lightblue;'
+      {% endif %}><a href="details/{{ x.id }}">{{ x.brandname }} {{ x.ratings }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

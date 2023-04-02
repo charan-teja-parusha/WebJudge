@@ -1,0 +1,37 @@
+{% extends "base/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-append">
+                    
+                    <form method="POST" action="{% url 'main' %}">
+                        {% csrf_token %}
+                        <input type="text" placeholder="Brand name .." style="width: 360px; height: 48px;" name="search_query">
+                        <button type="submit" class="btn btn-primary btn-lg" style="height: 48px;">Search</button>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block extra_css %}
+{{ form.media.css }}
+{% endblock %}
+
+{% block extra_js %}
+{{ form.media.js }}
+{% endblock %}
