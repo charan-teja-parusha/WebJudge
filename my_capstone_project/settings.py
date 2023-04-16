@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-t&1+uiny^8+nfbjc!98gt*70+fc+ge9z=n8pgh@en7k)f#+ail
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://webjudge.azurewebsites.net/']
 
 CRISPY_TEMPLATE_PACK="bootstrap5"
 CRISPY_ALLOWED_TEMPLATE_PACKS="bootstrap5"
@@ -126,7 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/static/'
+STATIC_ROOT = BASE_DIR / 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
