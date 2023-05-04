@@ -21,6 +21,7 @@ The user can also compare between different brands/company and review their rati
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
+**Below are some screenshots of the app:**
 
 **Login:**
 
