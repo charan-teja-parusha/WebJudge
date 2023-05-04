@@ -4,7 +4,6 @@ Brand Evaluation System based on User Feedback and Opinion Mining
 <img width="493" alt="image" src="https://user-images.githubusercontent.com/81465996/236201675-7ce4dfae-a127-418b-a654-86c193c33ed0.png">
 <img width="507" alt="image" src="https://user-images.githubusercontent.com/81465996/236201752-73855b9a-3356-4f0c-b621-cb7c96c608b5.png">
 
-Product Features
 
 A system for evaluating brands/companies where users can leave feedback on a specific brand/company regarding its authenticity, how quickly products are delivered, their products quality  etc. Brands will be rated on comments analysis using opinion mining.
 This website's features include reviews and rankings of numerous brands. 
