@@ -45,4 +45,6 @@ The user can also compare between different brands/company and review their rati
 
 <img width="754" alt="image" src="https://user-images.githubusercontent.com/81465996/236202315-071c800d-d99a-4227-b650-7e12ac6c0ee8.png">
 
-Thanks for reading, hope you enjoyed my work!
+**Thanks for reading, hope you enjoyed my work.**
+
+**- Charan Teja Parusha.**
